@@ -24,13 +24,10 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <button type="button" class="btn btn-outline-light mt-1 mb-0" data-bs-toggle="modal" data-bs-target="#product">Product</button>
-                  </li>
-                  <li class="nav-item">
+                  <li class="nav-item1">
                     <a class="nav-link" href="#">Services</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item1 dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Settings
                     </a>
@@ -43,15 +40,20 @@
                     </ul>
                   </li>
                   <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success mt-1 mb-0" data-bs-toggle="modal" data-bs-target="#product">Add Product</button>
+                  </li>
+                  <li class="nav-item">
                     <a hidden class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                   </li>
                 </ul>
+                <li class="nav-item-cart">
                 <form class="d-flex" role="search">
                   <button type="button" class="btn btn-primary position-relative">
                       Cart
                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                           3
                           <span class="visually-hidden">Item count</span>
+                        </li>
                         </span>
                     </button>
                 </form>
@@ -61,6 +63,12 @@
 </div>
 
 <style>
+  body {
+    background-image: url(https://wallpapercave.com/wp/THsknvO.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   .container {
     border-radius: 10px;
   }
@@ -73,6 +81,13 @@
   .card-img-top {
     border-radius: 20px;
     padding: 2%;
+  }
+  .nav-item {
+   }
+
+  .nav-item-cart{
+    position: relative;
+    margin-top: -23px;
   }
 </style>
 
@@ -93,7 +108,7 @@
         <div class="card-footer d-flex justify-content-between">
           <p class="card-text mb-2 mt-3">
               Price:
-              <span style="background-color: transparent"> <fon color="White">₱5,500</fon> </span>
+              <span style="background-color: transparent"> <fon color="White">₱7,500</fon> </span>
           </p>
           <button type="button" class="btn btn-outline-success mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#Modal1">Bilin mo na, tapon ko to</button>
           <button class="btn border-dark text-danger mb-2 mt-2" type="button">
@@ -119,7 +134,7 @@
     <div class="card-footer d-flex justify-content-between">
       <p class="card-text mb-2 mt-3">
           Price:
-          <span style="background-color: transparent"> <fon color="White">₱6,500</fon> </span>
+          <span style="background-color: transparent"> <fon color="White">₱9,259</fon> </span>
       </p>
       <button type="button" class="btn btn-outline-success mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#Modal2">Bilin mo na, tapon ko to</button>
       <button class="btn border-dark text-danger mb-2 mt-2" type="button">
@@ -147,7 +162,7 @@
         <div class="card-footer d-flex justify-content-between">
           <p class="card-text mb-2 mt-3">
               Price:
-              <span style="background-color: transparent"> <fon color="White">₱7,500</fon> </span>
+              <span style="background-color: transparent"> <fon color="White">₱5,240</fon> </span>
           </p>
           <button type="button" class="btn btn-outline-success mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#Modal3">Bilin mo na, tapon ko to</button>
           <button class="btn border-dark text-danger mb-2 mt-2" type="button">
@@ -397,7 +412,7 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Add a product</h4>
+        <h4 class="modal-title">Add</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -409,35 +424,30 @@
         <!--r-->
         <div class="mb-3">
           <div class="input-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text">Description</span>
-              </div>
-              <input type="text" class="form-control" id="username" placeholder="" required="">
+            <div class="input-group mt-1">
+              <span class="input-group-text">Description</span>
+              <textarea class="form-control" aria-label="Description"></textarea>
+            </div>
               <div class="invalid-feedback" style="width: 100%;"></div>
           </div>
           <div class="mt-3">
             <!--rj-->
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">₱</span>
+                    <span class="input-group-text">$</span>
                 </div>
                 <input type="text" class="form-control" id="username" placeholder="" required="">
                 <div class="invalid-feedback" style="width: 100%;"></div>
                 <div class="input-group-prepend">
+                  <!-- rrrr -->
                   <span class="input-group-text">.00</span>
               </div>
             </div>
           </div>
-            <div class="mt-3 ">
-              <label for="username"><h5>Product image</h5></label>
-                <div class="input-group">
-                  <!-- r -->
-                  <div class="input-group-prepend">
-                    <span class="input-group-text "><h5>Choose File</h5></span>
-                </div>
-                  <input type="text" class="form-control" id="username" placeholder="No file chosen" required="">
-                <div class="invalid-feedback" style="width: 100%;">No file chosen</div>
-            </div>
+          <div class="mt-3">
+            <label for="formFile" class="form-label text-dark"><h4>Product Image</h4></label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
           </div>
       </div>
       <div class="modal-footer">
