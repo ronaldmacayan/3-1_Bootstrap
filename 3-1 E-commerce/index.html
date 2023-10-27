@@ -39,7 +39,7 @@
                       <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
+                  <li class="testing">
                     <button type="button" class="btn btn-outline-success mt-1 mb-0" data-bs-toggle="modal" data-bs-target="#product">Add Product</button>
                   </li>
                   <li class="nav-item">
@@ -72,23 +72,47 @@
   .container {
     border-radius: 10px;
   }
-
-  .card {
-    border-radius: 10px;
-    background-color: rgb(253, 241, 241);
-  }
   
   .card-img-top {
     border-radius: 20px;
     padding: 2%;
   }
-  .nav-item {
+  .testing {
+    margin-left: 1428px;
+    margin-top: -1px;
    }
 
   .nav-item-cart{
     position: relative;
-    margin-top: -23px;
+    margin-top: -21px;
   }
+
+  .cap1 {
+    border-radius: 10px;
+    background-color: rgb(253, 229, 229);
+  }
+  .cap2 {
+    border-radius: 10px;
+    background-color: rgb(253, 229, 229);
+  }
+  .cap3 {
+    border-radius: 10px;
+    background-color: rgb(253, 229, 229);
+  }
+
+  .cap1:hover {
+    background-color: #ffdffd;
+    transform: scale(1.05);
+  }
+  .cap2:hover {
+    background-color: #ffdffd;
+    transform: scale(1.05); 
+  }
+  .cap3:hover {
+    background-color: #ffdffd;
+    transform: scale(1.05);
+  }
+
 </style>
 
 <div class="container mt-5 mb-4">
@@ -96,7 +120,7 @@
 
 <!-- PRODUCT 1 -->
     <div class="col-md-4">
-      <div class="card">
+      <div class="cap1">
         <img src="https://www.neweracap.com/cdn/shop/products/60399009_59FIFTY_LLWS23_CHIWHI_DKGDKGWHI_3QL.png?v=1687875718" class="card-img-top" alt="Chicago White SOX">
         <div class="card-body">
           <h4 class="card-title">Chicago White SOX</h4>
@@ -106,6 +130,7 @@
           </ul>
         </div>
         <div class="card-footer d-flex justify-content-between">
+          <!-- r -->
           <p class="card-text mb-2 mt-3">
               Price:
               <span style="background-color: transparent"> <fon color="White">₱7,500</fon> </span>
@@ -122,7 +147,7 @@
 
 <!-- PRODUCT 2 -->
 <div class="col-md-4">
-  <div class="card">
+  <div class="cap2">
     <img src="https://www.neweracap.com/cdn/shop/products/60231697_59FIFTY_MLB21CITYCNCTOFF_SADPAD_BLUE_3QL.png?v=1655929822" class="card-img-top" alt="San Diego Padres">
     <div class="card-body">
       <h4 class="card-title">San Diego Padres</h4>
@@ -137,6 +162,7 @@
           <span style="background-color: transparent"> <fon color="White">₱9,259</fon> </span>
       </p>
       <button type="button" class="btn btn-outline-success mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#Modal2">Bilin mo na, tapon ko to</button>
+      <!-- r -->
       <button class="btn border-dark text-danger mb-2 mt-2" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
           <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
@@ -150,7 +176,7 @@
 
 <!-- PRODUCT 3 -->
     <div class="col-md-4">
-      <div class="card">
+      <div class="cap3">
         <img src="https://www.neweracap.com/cdn/shop/products/9179063648286.jpg?v=1648517614" class="card-img-top" alt="Seattle Mariners">
         <div class="card-body">
           <h4 class="card-title">Seattle Mariners</h4>
@@ -160,6 +186,7 @@
             </ul>
         </div>
         <div class="card-footer d-flex justify-content-between">
+          <!-- r -->
           <p class="card-text mb-2 mt-3">
               Price:
               <span style="background-color: transparent"> <fon color="White">₱5,240</fon> </span>
@@ -294,6 +321,7 @@
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <!-- r -->
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -342,6 +370,7 @@
               <div class="carousel-item" data-bs-interval="2000">
                 <img src="https://www.neweracap.com/cdn/shop/products/60355756_59FIFTY_MLB23MTHRSDAY_SEAMAR_STN_3QR.png?v=1680634019" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
+                  <!-- rj -->
                   <h5>Pinky Drop 26 59FIFTY Fitted</h5>
                   <p>Size: 7 /7 1/8 / 7 1/4 / 7 3/8 / 7 1/2 / 7 3/4 / 8</p>
                 </div>
@@ -412,7 +441,8 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Add</h4>
+        <!-- asdasd -->
+        <h4 class="modal-title">Add a product</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -453,7 +483,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         <!--rmacayan-->
-        <button type="button" class="btn btn-success">Add product</button>
+        <button type="button" class="btn btn-success">Add</button>
       </div>
     </div>
   </div>
