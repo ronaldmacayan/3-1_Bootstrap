@@ -48,7 +48,7 @@
                 </ul>
                 <li class="nav-item-cart">
                 <form class="d-flex" role="search">
-                  <button type="button" class="btn btn-primary position-relative">
+                  <button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#cart">
                       Cart
                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                           3
@@ -64,7 +64,7 @@
 
 <style>
   body {
-    background-image: url(https://wallpapercave.com/wp/THsknvO.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp2759017.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -88,32 +88,57 @@
   }
 
   .cap1 {
-    border-radius: 10px;
-    background-color: rgb(253, 229, 229);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:  1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: rgb(255, 255, 255);
   }
   .cap2 {
-    border-radius: 10px;
-    background-color: rgb(253, 229, 229);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:  1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: rgb(255, 255, 255);
   }
   .cap3 {
-    border-radius: 10px;
-    background-color: rgb(253, 229, 229);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:  1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: rgb(255, 255, 255);
   }
 
   .cap1:hover {
-    background-color: #ffdffd;
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   .cap2:hover {
-    background-color: #ffdffd;
-    transform: scale(1.05); 
+    transform: scale(1.03); 
   }
   .cap3:hover {
-    background-color: #ffdffd;
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 
+  .btn1 {
+    border-radius: 7px;
+  }
+  .btn2 {
+    border-radius: 7px;
+  }
+  .btn3 {
+    border-radius: 7px;
+  }
 </style>
+
+<!--------------->
+<!-----CARDS----->
+<!--------------->
 
 <div class="container mt-5 mb-4">
   <div class="row gy-3">
@@ -126,24 +151,26 @@
           <h4 class="card-title">Chicago White SOX</h4>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo quasi quia, corrupti quos numquam minus eligendi dolor. Deserunt blanditiis quam consequatur ducimus rerum? Ratione ipsa eius non laborum optio.</p>
           <ul>
-            <h5>Color Shown: Pine / White</h5>
+            <h5>Color Shown: Pine / White / Black</h5>
           </ul>
         </div>
         <div class="card-footer d-flex justify-content-between">
           <!-- r -->
-          <p class="card-text mb-2 mt-3">
+          <p class="card-text mb-2 mt-2">
               Price:
-              <span style="background-color: transparent"> <fon color="White">₱7,500</fon> </span>
+              <label class="btn btn-dark btn-sm"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              ₱ 4,500</label>
           </p>
-          <button type="button" class="btn btn-outline-success mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#Modal1">Bilin mo na, tapon ko to</button>
-          <button class="btn border-dark text-danger mb-2 mt-2" type="button">
+          <button type="button" class="btn1 btn-outline-success mt-1 mb-2" data-bs-toggle="modal" data-bs-target="#Modal1">Bilin mo na, tapon ko to</button>
+          <button class="btn border-dark text-danger mb-2 mt-1" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
               <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
             </svg>
           </button>
       </div>
       </div>
-    </div>
+    </div> 
 
 <!-- PRODUCT 2 -->
 <div class="col-md-4">
@@ -153,17 +180,19 @@
       <h4 class="card-title">San Diego Padres</h4>
       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur quibusdam officiis consequatur soluta a quisquam vel sed fuga eos omnis dignissimos consectetur, hic perferendis sapiente, modi possimus officia et!</p>          
         <ul>
-          <h5>Color Shown: Aqua / Pink</h5>
+          <h5>Color Shown: Aqua / Pink / White</h5>
         </ul>
     </div>
     <div class="card-footer d-flex justify-content-between">
-      <p class="card-text mb-2 mt-3">
+      <p class="card-text mb-2 mt-2">
           Price:
-          <span style="background-color: transparent"> <fon color="White">₱9,259</fon> </span>
+          <label class="btn btn-dark btn-sm"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              ₱ 5,000</label>
       </p>
-      <button type="button" class="btn btn-outline-success mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#Modal2">Bilin mo na, tapon ko to</button>
+      <button type="button" class="btn2 btn-outline-success mt-1 mb-2" data-bs-toggle="modal" data-bs-target="#Modal2">Bilin mo na, tapon ko to</button>
       <!-- r -->
-      <button class="btn border-dark text-danger mb-2 mt-2" type="button">
+      <button class="btn border-dark text-danger mb-2 mt-1" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
           <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
         </svg>
@@ -172,12 +201,10 @@
   </div>
 </div>
 
-
-
 <!-- PRODUCT 3 -->
     <div class="col-md-4">
       <div class="cap3">
-        <img src="https://www.neweracap.com/cdn/shop/products/9179063648286.jpg?v=1648517614" class="card-img-top" alt="Seattle Mariners">
+        <img src="https://www.neweracap.com/cdn/shop/files/60417688_59FIFTY_CAMP_SEAMARCO_CHW_3QL.jpg?v=1690837273" class="card-img-top" alt="Seattle Mariners">
         <div class="card-body">
           <h4 class="card-title">Seattle Mariners</h4>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cum porro ut harum voluptates dolore, molestias quae qui nobis! Quasi minima laborum dolore sint ipsa molestias dolorum amet cumque nesciunt!</p>
@@ -187,12 +214,14 @@
         </div>
         <div class="card-footer d-flex justify-content-between">
           <!-- r -->
-          <p class="card-text mb-2 mt-3">
+          <p class="card-text mb-2 mt-2">
               Price:
-              <span style="background-color: transparent"> <fon color="White">₱5,240</fon> </span>
+              <label class="btn btn-dark btn-sm"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              ₱ 5,500</label>
           </p>
-          <button type="button" class="btn btn-outline-success mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#Modal3">Bilin mo na, tapon ko to</button>
-          <button class="btn border-dark text-danger mb-2 mt-2" type="button">
+          <button type="button" class="btn3 btn-outline-success mt-1 mb-2" data-bs-toggle="modal" data-bs-target="#Modal3">Bilin mo na, tapon ko to</button>
+          <button class="btn border-dark text-danger mb-2 mt-1" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
               <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
             </svg>
@@ -203,11 +232,12 @@
   </div>
 </div>
 
-<!-- MODAL -->
-
+<!-------------------->
+<!-----CARD MODAL----->
+<!-------------------->
 <style>
   .modal-body {
-    background-color: rgb(255, 244, 244);
+    background-color: rgb(230, 216, 216);
   }
   .carousel-caption {
     color: black;
@@ -230,20 +260,24 @@
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="https://www.neweracap.com/cdn/shop/products/60398894_59FIFTY_EVERGREEN_CHIWHI_SCASCAWHI_3QR.png?v=1687875862" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
                 <h5>Scarlett 59FIFTY Fitted</h5>
-                <p>Size: 7 /7 1/8 / 7 1/4 / 7 3/8 / 7 1/2 / 7 3/4 / 8</p>
               </div>
             </div>
             <div class="carousel-item">
               <!-- r -->
               <img src="https://www.neweracap.com/cdn/shop/products/70716725_59FIFTY_BURNTWOOD_CHIWHICO_BROWN_3QR.png?v=1666118594" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
                 <h5>Caps Drop 20 59FIFTY Fitted</h5>
-                <p>Size: 7 /7 1/8 / 7 1/4 / 7 3/8 / 7 1/2 / 7 3/4 / 8</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="https://www.neweracap.com/cdn/shop/products/60285393_59FIFTY_KAQUARTERLYCUSTOMS_CHIWHI_AGD_3QR.png?v=1650998039" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <h5>Yellow Drop 69 59FIFTY Fitted</h5>
+              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
@@ -259,35 +293,43 @@
           <div class="container">
             <div class="row">
                 <div class="col-md-12 order-md-1">
-                    <h5 class="mb-2">Sobra na ganda nyan insan.</h5>
+                    <h5 class="mb-2">Pumili ka nalang.</h5>
                     <form class="needs-validation" novalidate="">
                         <div class="row">
                           <!-- ronald -->
-                            <div class="col-md-6 mb-2">
-                                <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                                <div class="invalid-feedback"> Ayusin mo. </div>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                                <div class="invalid-feedback"> Ayusin mo. </div>
+                            <div class="col mb-4 mt-2">
+                              <form>
+                                <label><h6>Choose Color :</h6></label>
+                                <select class="btn btn-light">
+                                  <option>Scarlett</option>
+                                  <option>Caps Drop 20</option>
+                                  <option>Yellow Drop 69</option>
+                                </select>
+                              </form>
                             </div>
                             <div class="mb-2">
-                              <label for="address">Address</label>
-                              <input type="text" class="form-control" id="address" placeholder="212 Batumbakal" required="">
-                              <div class="invalid-feedback"> Tenks </div>
+                              <form>
+                                <label><h6>Choose Size :</h6></label>
+                                <select class="btn btn-light">
+                                  <option>7</option>
+                                  <option>7 1/8</option>
+                                  <option>7 1/4</option>
+                                  <option>7 1/2</option>
+                                  <option>7 3/4</option>
+                                  <option>8</option>
+                                </select>   
+                              </form>
                            </div>
                         </div>
                     </div>
                 </div>
             </div>
          </div>
-         </div>
+       </div>
   <div class="modal-footer">
     <!-- r -->
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Checkout</button>
+        <button type="button" class="btn btn-success">Add to cart</button>
       </div>
     </div>
   </div>
@@ -298,48 +340,75 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Other Designs</h5>
-        
+        <h5 class="modal-title">New Era MLB Caps</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <!-- r -->
       <div class="modal-body">
 
         <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="https://www.neweracap.com/cdn/shop/products/60398914_59FIFTY_EVERGREEN_SADPAD_SCASCAWHI_3QR.png?v=1687875862" class="d-block w-100" alt="...">
+              <img src="https://www.neweracap.com/cdn/shop/files/Supplement_Graphite_HomePage_framesFeatureSquareSlideshow_1500x1500_fc602c1d-9fe6-42ba-83bf-a424e5e8ed43.jpg?v=1698773604&width=2560" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Red 59FIFTY Fitted</h5>
-                <!-- r -->
-                <p>Size: 7 /7 1/8 / 7 1/4 / 7 3/8 / 7 1/2 / 7 3/4 / 8</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="https://images.vans.com/is/image/Vans/VN000CQR_CYM_ALT1?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://images.vans.com/is/image/Vans/VN000CQR_WHT_ALT1?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0" class="d-block w-100" alt="...">
+          <div class="carousel-item">
+            <img src="https://www.neweracap.com/cdn/shop/files/60428215_59FIFTY_LifestyleEnergy_SEAMARCO_OTC_3QR.jpg?v=1689625849" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <h5>Khaki Green 59FIFTY Fitted</h5>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-            <!-- r -->
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            <!-- r -->
-          </button>
-        </div>  
+        </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12 order-md-1">
+                    <h5 class="mb-2 mt-2">Pumili ka nalang.</h5>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row">
+                          <!-- ronald -->
+                          <div class="col mb-4 mt-2">
+                            <form>
+                              <label><h6>Choose Color :</h6></label>
+                              <select class="btn btn-light">
+                                <option>Gray Yankees</option>
+                                <option>White</option>
+                                <option>Black Heat</option>
+                                <option>Cream D</option>
+                              </select>
+                            </form>
+                          </div>
+                          <div class="mb-2">
+                            <form>
+                              <label><h6>Choose Size :</h6></label>
+                              <select class="btn btn-light">
+                                <option>7</option>
+                                <option>7 1/8</option>
+                                <option>7 1/4</option>
+                                <option>7 1/2</option>
+                                <option>7 3/4</option>
+                                <option>8</option>
+                              </select>   
+                            </form>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
          </div>
+       </div>
   <div class="modal-footer">
+    <!-- r -->
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Checkout</button>
+        <button type="button" class="btn btn-success">Add to cart</button>
       </div>
     </div>
   </div>
 </div>
-</body>
 
 <!-- PRODUCT 3 -->
 <div class="modal fade" tabindex="-1" id="Modal3">
@@ -361,25 +430,25 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://www.neweracap.com/cdn/shop/products/70764086_59FIFTY_STONEPINK_SEAMARCO_GRAY_3QR.png?v=1684246288" class="d-block w-100" alt="...">
+                <img src="https://www.neweracap.com/cdn/shop/products/70769086_59FIFTY_ORANGEPOPSICLE_SEAMARCO_ORG_3QR.png?v=1687881892" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Stone Pink 59FIFTY Fitted</h5>
-                  <p>Size: 7 /7 1/8 / 7 1/4 / 7 3/8 / 7 1/2 / 7 3/4 / 8</p>
+                  <h5></h5>
+                  <h5>Orange Drop 26 59FIFTY Fitted</h5>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://www.neweracap.com/cdn/shop/products/60355756_59FIFTY_MLB23MTHRSDAY_SEAMAR_STN_3QR.png?v=1680634019" class="d-block w-100" alt="...">
+                <img src="https://www.neweracap.com/cdn/shop/products/60417726_59FIFTY_METALLICGRADIENT_SEAMARCO_OTC_3QR.png?v=1686164844" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <!-- rj -->
-                  <h5>Pinky Drop 26 59FIFTY Fitted</h5>
-                  <p>Size: 7 /7 1/8 / 7 1/4 / 7 3/8 / 7 1/2 / 7 3/4 / 8</p>
+                  <h5></h5>
+                  <h5>Metallic Gradient 59FIFTY Fitted</h5>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://www.neweracap.com/cdn/shop/products/70747907_59FIFTY_JUSTCAPSIVORY_SEAMARCO_TAN_3QR.png?v=1679582644" class="d-block w-100" alt="...">
+                <img src="https://www.neweracap.com/cdn/shop/files/60428215_59FIFTY_LifestyleEnergy_SEAMARCO_OTC_3QR.jpg?v=1689625849" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Ivory Visor 59FIFTY Fitted</h5>
-                  <p>7 /7 1/8 / 7 1/4 / 7 3/8 / 7 1/2 / 7 3/4 / 8</p>
+                  <h5></h5>
+                  <h5>Khaki Green 59FIFTY Fitted</h5>
                 </div>
               </div>
             </div>
@@ -399,43 +468,50 @@
           <div class="container">
             <div class="row">
                 <div class="col-md-12 order-md-1">
-                    <h5 class="mb-2">Mekus mekus mona yan .</h5>
+                    <h5 class="mb-2 mt-2">Pumili ka nalang.</h5>
                     <form class="needs-validation" novalidate="">
                         <div class="row">
                           <!-- ronald -->
-                            <div class="col-md-6 mb-2">
-                                <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                                <div class="invalid-feedback"> Ayusin mo. </div>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                                <div class="invalid-feedback"> Ayusin mo. </div>
-                            </div>
-                            <div class="mb-2">
-                              <!-- ronald -->
-                              <label for="address">Address</label>
-                              <input type="text" class="form-control" id="address" placeholder="212 Batumbakal" required="">
-                              <div class="invalid-feedback"> Tenks </div>
-                           </div>
+                          <div class="col mb-4 mt-2">
+                            <form>
+                              <label><h6>Choose Color :</h6></label>
+                              <select class="btn btn-light">
+                                <option>Orange Drop 26</option>
+                                <option>Metallic Gradient</option>
+                                <option>Khaki Green</option>
+                              </select>
+                            </form>
+                          </div>
+                          <div class="mb-2">
+                            <form>
+                              <label><h6>Choose Size :</h6></label>
+                              <select class="btn btn-light">
+                                <option>7</option>
+                                <option>7 1/8</option>
+                                <option>7 1/4</option>
+                                <option>7 1/2</option>
+                                <option>7 3/4</option>
+                                <option>8</option>
+                              </select>   
+                            </form>
+                         </div>
                         </div>
                     </div>
                 </div>
             </div>
          </div>
-
-         </div>
+       </div>
   <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Checkout</button>
+        <button type="button" class="btn btn-success">Add to cart</button>
       </div>
     </div>
   </div>
 </div>
-</body>
 
-<!-- TOPNAV PRODUCT MODAL -->
+<!---------------------------->
+<!----TOPNAV PRODUCT MODAL---->
+<!---------------------------->
 
 <div class="modal fade" tabindex="-1" id="product">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -489,6 +565,60 @@
   </div>
 </div>
 
+<!-------------------->
+<!-----CART MODAL----->
+<!-------------------->
+<div class="modal fade" tabindex="-1" id="cart">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- asdasd -->
+        <h4 class="modal-title">Checkout</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Product Name">
+          <div class="invalid-feedback"></div>
+        </div>
+        <!--r-->
+        <div class="mb-3">
+          <div class="input-group">
+            <div class="input-group mt-1">
+              <span class="input-group-text">Description</span>
+              <textarea class="form-control" aria-label="Description"></textarea>
+            </div>
+              <div class="invalid-feedback" style="width: 100%;"></div>
+          </div>
+          <div class="mt-3">
+            <!--rj-->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="" required="">
+                <div class="invalid-feedback" style="width: 100%;"></div>
+                <div class="input-group-prepend">
+                  <!-- rrrr -->
+                  <span class="input-group-text">.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <label for="formFile" class="form-label text-dark"><h4>Product Image</h4></label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <!--rmacayan-->
+        <button type="button" class="btn btn-success">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- 
 <div class="container mt-3" id="containerLogin">
