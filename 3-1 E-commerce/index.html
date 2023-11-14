@@ -40,7 +40,7 @@
                     </ul>
                   </li>
                   <li class="testing">
-                    <button type="button" class="btn btn-outline-success mt-1 mb-0" data-bs-toggle="modal" data-bs-target="#product">Add Product</button>
+                    <button type="button" class="btn btn-outline-success mt-0 mb-0" data-bs-toggle="modal" data-bs-target="#product">Add Product</button>
                   </li>
                   <li class="nav-item">
                     <a hidden class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -78,8 +78,8 @@
     padding: 2%;
   }
   .testing {
-    margin-left: 1428px;
-    margin-top: -1px;
+    margin-left: 1630px;
+    margin-top: 3px;
    }
 
   .nav-item-cart{
@@ -140,10 +140,8 @@
 <!-----CARDS----->
 <!--------------->
 
-<div class="container mt-5 mb-4">
+<div hidden class="container mt-5 mb-4">
   <div class="row gy-3">
-
-<!-- PRODUCT 1 -->
     <div class="col-md-4">
       <div class="cap1">
         <img src="https://www.neweracap.com/cdn/shop/products/60399009_59FIFTY_LLWS23_CHIWHI_DKGDKGWHI_3QL.png?v=1687875718" class="card-img-top" alt="Chicago White SOX">
@@ -155,7 +153,6 @@
           </ul>
         </div>
         <div class="card-footer d-flex justify-content-between">
-          <!-- r -->
           <p class="card-text mb-2 mt-2">
               Price:
               <label class="btn btn-dark btn-sm"
@@ -237,7 +234,7 @@
 <!-------------------->
 <style>
   .modal-body {
-    background-color: rgb(252, 241, 241);
+    background-color: rgb(230, 216, 216);
   }
   .carousel-caption {
     color: black;
@@ -517,7 +514,7 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <!-- asdasd -->
+        
         <h4 class="modal-title">Add a product</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -527,7 +524,7 @@
           <input type="email" class="form-control" id="email" placeholder="Product Name">
           <div class="invalid-feedback"></div>
         </div>
-        <!--r-->
+        
         <div class="mb-3">
           <div class="input-group">
             <div class="input-group mt-1">
@@ -537,7 +534,7 @@
               <div class="invalid-feedback" style="width: 100%;"></div>
           </div>
           <div class="mt-3">
-            <!--rj-->
+           
             <div class="input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text">$</span>
@@ -545,7 +542,7 @@
                 <input type="text" class="form-control" id="username" placeholder="" required="">
                 <div class="invalid-feedback" style="width: 100%;"></div>
                 <div class="input-group-prepend">
-                  <!-- rrrr -->
+                  
                   <span class="input-group-text">.00</span>
               </div>
             </div>
@@ -558,7 +555,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <!--rmacayan-->
+        
         <button type="button" class="btn btn-success">Add</button>
       </div>
     </div>
@@ -620,7 +617,7 @@
   </div>
 </div>
 
-<!-- 
+<!--------LOGIN-------->
 <div class="container mt-3" id="containerLogin">
             <label><h3>Login</h3></label>
             <div class="form-floating mb-3">
@@ -642,6 +639,8 @@
                 </a>
                 <a href="#" class="text-decoration-under-line">Forget password?</a>
 
+
+<!------REGISTER------>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -651,19 +650,19 @@
       </div>
       
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="txtRegisterEmail" placeholder="name@example.com">
         <label for="floatingInput">Email address</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="txtRegisterName" placeholder="name@example.com">
         <label for="floatingInput">Name</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <input type="password" class="form-control" id="txtRegisterPassword" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="txtRegisterConfirmPassword" placeholder="name@example.com">
         <label for="floatingInput">Confirm Password</label>
       </div>
 
@@ -694,7 +693,7 @@
 
       <div class="container mt-3">
         <div class="form-floating">
-          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <select class="form-select" id="selectRegisterYear" aria-label="Floating label select example">
             <option selected>Select year level...</option>
             <option value="1">1st Year</option>
             <option value="2">2nd Year</option>
@@ -705,28 +704,29 @@
         </div>
       </div>
 
-
-      RONALD MACAYAN 
-
-
       <div class="input-group mt-3">
         <span class="input-group-text">Address</span>
-        <textarea class="form-control" aria-label="Address"></textarea>
+        <textarea id="txtRegisterAddress" class="form-control" aria-label="Address"></textarea>
       </div>
 
 
       <div class="mt-3">
         <div class="form-floating mb-3">
-          <input type="date" class="form-control" id="floatingDate" placeholder="Birthdate"/>
-          <label for="floatingDate">Birthday</label>
+          <input type="date" class="form-control" id="txtRegisterBirthdate" placeholder="Birthdate"/>
+          <label for="floatingDate">Birthdate</label>
         </div>
       </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Register!</button>
+        <button id="btnRegister" type="button" class="btn btn-success">Register!</button>
       </div>
     </div>
   </div>
 </div>
- -->
+
+</body>
+  <footer>
+    <script src="./index.js"></script>
+  </footer>
+</html>
