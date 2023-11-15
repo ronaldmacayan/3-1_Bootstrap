@@ -671,19 +671,19 @@
       <label for="radioGender" class="mb-1">Gender</label>
       
       <div class="form-check col-4">
-        <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault1">
+        <input class="form-check-input" type="radio" name="radioGender" id="txtRegisterMale">
         <label class="form-check-label" for="flexRadioDefault0">
           Male
         </label>
       </div>
       <div class="form-check col-4">
-        <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault2" checked>
+        <input class="form-check-input" type="radio" name="radioGender" id="txtRegisterFemale" checked>
         <label class="form-check-label" for="flexRadioDefault0">
           Female
         </label>
       </div>
       <div class="form-check col-4">
-        <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault2" checked>
+        <input class="form-check-input" type="radio" name="radioGender" id="txtRegisterNot" checked>
         <label class="form-check-label" for="flexRadioDefault0">
           Rather not say
         </label>
@@ -691,31 +691,33 @@
      </div>
      </div>
 
-      <div class="container mt-3">
-        <div class="form-floating">
-          <select class="form-select" id="selectRegisterYear" aria-label="Floating label select example">
-            <option selected>Select year level...</option>
-            <option value="1">1st Year</option>
-            <option value="2">2nd Year</option>
-            <option value="3">3rd Year</option>
-            <option value="4">4th Year</option>
-          </select>
-          <label for="floatingSelect">Year Level</label>
-        </div>
+     <div class="mt-3">
+      <div class="form-floating">
+        <select id="regYear" class="form-select" aria-label="Default select example">
+          <option selected value="0">Select Year Level...</option>
+          <option value="1">1st Year</option>
+          <option value="2">2nd Year</option>
+          <option value="3">3rd Year</option>
+          <option value="4">4th Year</option>
+        </select>
+        <label for="regYear">Year Level</label>
       </div>
+    </div>
 
-      <div class="input-group mt-3">
+    <div class="mt-3">
+      <div class="input-group">
         <span class="input-group-text">Address</span>
-        <textarea id="txtRegisterAddress" class="form-control" aria-label="Address"></textarea>
+        <textarea class="form-control" aria-label="With textarea" id="txtRegisterAddress"></textarea>
       </div>
+    </div>
 
 
-      <div class="mt-3">
-        <div class="form-floating mb-3">
-          <input type="date" class="form-control" id="txtRegisterBirthdate" placeholder="Birthdate"/>
-          <label for="floatingDate">Birthdate</label>
-        </div>
+    <div class="mt-3">
+      <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="txtRegisterBirthdate" placeholder="Birthdate">
+        <label for="regBirthdate">Birthdate</label>
       </div>
+    </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
