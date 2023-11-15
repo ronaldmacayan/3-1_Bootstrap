@@ -52,7 +52,7 @@ function registerUser (){
 // LOCAL STORAGE
     localStorage.setItem("user", JSON.stringify(user));
 
-    console.log("Naka registered kana insan!", users);
+    console.log("Naka registered kana insan!", user);
 }
 
 btnRegister.onclick = () => {
